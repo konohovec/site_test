@@ -1,0 +1,155 @@
+.main__body {
+	display: flex;
+	margin-top: 30px;
+}
+.main__filter {
+	position: relative;
+	opacity: 1;
+	transition: all 1s ease 0s;
+}
+
+.close__filter {
+	cursor: pointer;
+	width: 25px;
+	height: 3px;
+	background-color: #000;
+	position: absolute;
+	top: 26px;
+	right: 15px;
+	transform: rotate(-45deg);
+}
+.close__filter:nth-child(2){
+	transform: rotate(45deg)
+}
+
+.main__filter.open {
+	opacity: 1;
+}
+.open_filter {
+	display: none;
+	font-size: 24px;
+	color: #000; 
+}
+.open_filter u {
+	cursor: pointer;
+}
+.open_filter.open {
+	display: none;
+}
+.main__filter_body{
+	width: 300px;
+	height: auto;
+	background-color: #94B0F1;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.main__filter_checkbox form {
+	display: flex;
+	flex-direction: column;
+}
+.main__filter_checkbox select {
+	width: 40%;
+	margin: 15px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 8px;
+}
+#diametr {
+	width: auto;
+}
+.main__filter_checkbox button {
+	width: 40%;
+	margin: 15px;
+	border-radius: 8px;
+	height: 30px;
+	font-size: 20px;
+	background-color: #fff;
+}
+.main__filter_checkbox_title{
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+.main__catalog {
+	float: left;
+	display: flex;
+	margin-left: 15px;
+	flex-wrap: wrap;
+}
+.main__item {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #94B0F1;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgba(148, 176, 241, 0.5);
+	width: 31%;
+	margin: 0 10px 10px 10px;
+	padding: 10px;
+}
+.main__img {
+	max-width: 300px;
+	cursor: grab;
+}
+.main__img img {
+	width: 100%;
+}
+.main__title {
+	font-size: 24px;
+	margin: 20px 0 10px 0;
+}
+.main__text {
+	font-size: 16px;
+	line-height: 26px;
+}
+.main__price {
+	font-size: 16px;
+}
+.main__price span{
+	font-size: 24px;
+	margin: 10px 0 10px 0;
+}
+
+.about {
+	width: 40%;
+	margin: 20px 0 10px 0;
+	border-radius: 8px;
+	height: 30px;
+	font-size: 18px;
+	background-color: #94B0F1;
+	color: #fff;
+}
+
+
+
+
+@media(max-width: 769px) {
+	.main__body {
+		display: flex;
+		flex-direction: column;
+	}
+	.main__filter {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.main__item {
+		width: 60%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.main__catalog {
+		margin-left: 0;
+	}
+	.main__img {
+		margin: 0 auto;
+	}
+}
+@media(max-width: 415px) {
+	.main__item {
+		width: 80%;
+	}
+	.main__img {
+		margin: 0;
+	}
+}
+
+
